@@ -76,7 +76,8 @@ Tests are organized by functionality:
 
 ### Approach
 
-For the **List Breweries** endpoint (`GET /v1/breweries`), I would apply a combinatorial testing approach with focus on critical paths. 
+For the **List Breweries** endpoint (`GET /v1/breweries`), I would apply a combinatorial testing approach with focus on critical paths.
+Validation scenarios with multiple input values (e.g. boundary and invalid cases) would be implemented using JUnit parameterized tests to reduce duplication.
 Given 11 optional parameters, full combinatorial testing is impractical. Instead, I would use:
 
 - **Pairwise Testing** - Test combinations of 2 parameters to cover interaction defects
